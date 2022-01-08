@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>关于我们</title>
+    
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    
+   
+   
+</head> 
+<style>
+    .mod {
+    background-color: rgba(243,243,243,0.5);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+    .mode-ffoer:hover {
+    opacity: 0.6;
+    }
+    .placeholder{
+	border:1px solid FFFFFFA6;
+	border-radius:5px;
+	margin-left: 20px;
+	margin-top: 15px;
+	padding:0px;
+	width: 600px;
+	height: 40px;
+	color:rgba(204, 204, 204, 0.788) !important;
+  background-color: #FFFFFFA6 ;
+
+}
+</style>
+<body style="background-color:#1A1A1A; background-repeat:no-repeat; background-attachment: fixed;"   id="beiju">
+  
+
+<div>
+  <div style="text-align: center; margin-top: 140px;"  >
+    <img src="Epicimages/uugai.com-1641473611471.png" style=" width: 550px; height: 500px; margin-bottom: -100px;" >
+  </div>
+  <div style="text-align: center; margin-top: 40px;" > 
+  <form  style="position:relative; text-align:center;display: inline-block;">             
+    <input class="placeholder"  placeholder="&nbsp;&nbsp;可以在这里搜索您想要的东西哦 "  >
+    <a style="position:absolute;right: 0px;top: 20px; "> <img src="Epicimages/搜索黑.png" style="width: 32px;"></a>
+</form>
+</div>
+<div class="container " style="margin-top: 60px; position: relative;" >
+  <!-- 右边功能按键 -->
+
+  
+  <div id="beiju5"  class="mod" style="position:fixed; bottom: -20px;  right: 100px; color: #fff; background: #44444480;width: 85px; padding: 10px 5px; ">
+    <div style="text-align: center;  " >
+      <p style="border-left: #00BFFF 5px solid; margin-left: -4px;" >切换繁简</p>
+      
+     
+    <div class="custom-control custom-switch " style="text-align: center; margin-top: -12px;" >
+      <input type="checkbox" class="custom-control-input "    id="customSwitch1">
+      <label id="" class="custom-control-label" for="customSwitch1"></label>
+    </div>
+  </div>
+
+    <div style="text-align: center; margin-top: 20px;" >
+      <p style="border-left: #00BFFF 5px solid; margin-left: -4px;" >夜间模式</p>
+     
+    <div class="custom-control custom-switch " style="text-align: center; margin-top: -12px; " >
+      <input type="checkbox" class="custom-control-input " checked  id="customSwitch2">
+      <label id="d1" class="custom-control-label" for="customSwitch2"></label>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px; " >
+    <p style="border-left: #00BFFF 5px solid; margin-left: -4px;" >动态背景</p>
+    
+   
+  <div class="custom-control custom-switch " style="text-align: center; margin-top: -12px;" >
+    <input type="checkbox" class="custom-control-input " checked   id="customSwitch3">
+    <label id="" class="custom-control-label" for="customSwitch3"></label>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 20px; " >
+  <p style="border-left: #00BFFF 5px solid; margin-left: -4px;" >背景图片</p>
+  
+ 
+<div class="custom-control custom-switch " style="text-align: center; margin-top: -12px;" >
+  <input type="checkbox" class="custom-control-input "   id="customSwitch4">
+  <label id="d2" class="custom-control-label" for="customSwitch4"></label>
+</div>
+</div>
+  </div>
+  
+  <div  style="margin-top: 30px;" >
+    <div class="card   mod " style="background: #44444480; color: #fff;"  id="beiju2" >
+     <h2 style="font-size: 21px;  padding-left: 22px; margin-top: 20px;  border-left: 6px solid #00BFFF;">制作团队</h2>
+    <div class="row container " style=" margin-top: 15px; margin-bottom: 30px; margin-left: 10px; text-align: center;" >
+      <div class="col-4 " style="position: relative;" >
+        <div>
+          <div class="mode-ffoer" >
+            <img src="Epicimages/赖刚.jpg" style="border-radius: 50%;  width: 100px;height: 100px; border: 4px white solid;">
+          </div>
+         <div style="margin-top: 10px;" >
+            <button class="btn btn-outline-primary" style="position: relative;" id="bt">
+              <img src="Epicimages/关于我们.png" style="position: absolute;  width: 32px; left: 0px; ">
+             <h5 style="margin-left: 20px; color: #fff; margin-top: 2px;"  >个人主页</h5>
+            </button>
+          </div>
+        <!-- 个人信息 -->
+          <div class="card" style="position: relative; left: 10px; top: 20px; background-color:#1a1a1a69; display: none;" id="thediv">
+            <img src="Epicimages/城市.jpg"  style="position: relative; height: 100px;width: 100%;  ">
+            <img src="Epicimages/赖刚.jpg" style="position: absolute; top: 50px; left: 37px; border-radius: 50%;  width: 100px;height: 100px; border: 4px rgba(0, 0, 0, 0.644) solid;">
+           <div class="row no-gutters">
+             <div class="col-5" >
+              <div>
+                <h4 style="margin-left: 0px; margin-top: 75px;" >1084</h4>
+                <p style="margin-left: 0px; margin-top: -10px;" >Follwers</p>
+                <h4 style="margin-left: 0px; margin-top: 15px;" >118</h4>
+                <p style="margin-left: 0px; margin-top: -10px;" >Foll0wing</p>
+              </div>
+             </div>
+             <div class="col-7" style="background-color: #1a1a1a60; " >
+             <h5 style="margin-left: -120px; font-size: 17px; margin-top: 10px;" >赖刚</h5>
+             <p style="margin-left: 15px; font-size: 13px; text-align: left;" >负责 主页 页首 页尾制作,资源整合。</p>
+
+             <div  style="position: relative;">
+              <img src="Epicimages/工具箱.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 20px; font-size: 13px;"  >UI & Grapht design</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/地球.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 10px; font-size: 13px;"  >www.google.com</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/clipboard写字板.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 17px; font-size: 13px;"  >Download Resume</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/信封.png" style="position: absolute;top: -4px;  width: 20px; left: 15px; ">
+             <h5 style="margin-left: 3px; font-size: 13px;"  >Send a message</h5>
+            </div>
+            <div  style="position: relative; margin-top:20px;">
+              <img src="Epicimages/twitter.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left:-13px; font-size: 13px;"  >@eldindesign</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/花.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: -50px; font-size: 13px;"  >dribble</h5>
+            </div>
+             </div>
+           
+           </div>
+            
+            
+          </div>
+          
+        </div>
+      
+      </div>
+      <div class="col-4 " style="position: relative;  "  >
+        <div>
+          <div class="mode-ffoer" >
+            <img src="Epicimages/头像.jpg" style="border-radius: 50%;  width: 100px;height: 100px; border: 4px white solid;">
+          </div>
+         <div style="margin-top: 10px;" >
+            <button class="btn btn-outline-primary" style="position: relative;" id="bt1">
+              <img src="Epicimages/关于我们.png" style="position: absolute;  width: 32px; left: 0px; ">
+             <h5 style="margin-left: 20px; color: #fff; margin-top: 2px;"  >个人主页</h5>
+            </button>
+          </div>
+        <!-- 个人信息 -->
+          <div class="card" style="position: relative; left: 10px; top: 20px; background-color:#1a1a1a69; display: none;" id="thediv1">
+            <img src="Epicimages/城市2.webp"  style="position: relative; height: 100px;width: 100%;  ">
+            <img src="Epicimages/头像.jpg" style="position: absolute; top: 50px; left: 37px; border-radius: 50%;  width: 100px;height: 100px; border: 4px rgba(0, 0, 0, 0.644) solid;">
+           <div class="row no-gutters">
+             <div class="col-5" >
+              <div>
+                <h4 style="margin-left: 0px; margin-top: 75px;" >1085</h4>
+                <p style="margin-left: 0px; margin-top: -10px;" >Follwers</p>
+                <h4 style="margin-left: 0px; margin-top: 15px;" >119</h4>
+                <p style="margin-left: 0px; margin-top: -10px;" >Foll0wing</p>
+              </div>
+             </div>
+             <div class="col-7" style="background-color: #1a1a1a60; " >
+             <h5 style="margin-left: -120px; font-size: 17px; margin-top: 10px;" >万行</h5>
+             <p style="margin-left: 15px; font-size: 13px; text-align: left;" >负责 游戏 游戏详情 关于我们制作。</p>
+
+             <div  style="position: relative;">
+              <img src="Epicimages/工具箱.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 20px; font-size: 13px;"  >UI & Grapht design</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/地球.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 10px; font-size: 13px;"  >www.google.com</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/clipboard写字板.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 17px; font-size: 13px;"  >Download Resume</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/信封.png" style="position: absolute;top: -4px;  width: 20px; left: 15px; ">
+             <h5 style="margin-left: 3px; font-size: 13px;"  >Send a message</h5>
+            </div>
+            <div  style="position: relative; margin-top:20px;">
+              <img src="Epicimages/twitter.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left:-13px; font-size: 13px;"  >@eldindesign</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/花.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: -50px; font-size: 13px;"  >dribble</h5>
+            </div>
+             </div>
+           
+           </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-4 " style="position: relative;  "  > 
+        <div>
+          <div class="mode-ffoer" >
+            <img src="Epicimages/廖方聪.jpg" style="border-radius: 50%;  width: 100px;height: 100px; border: 4px white solid;">
+          </div>
+         <div style="margin-top: 10px;" >
+            <button class="btn btn-outline-primary" style="position: relative;" id="bt2">
+              <img src="Epicimages/关于我们.png" style="position: absolute;  width: 32px; left: 0px; ">
+             <h5 style="margin-left: 20px; color: #fff; margin-top: 2px;"  >个人主页</h5>
+            </button>
+          </div>
+        <!-- 个人信息 -->
+          <div class="card" style="position: relative; left: 10px; top: 20px; background-color:#1a1a1a69; display: none;" id="thediv2">
+            <img src="Epicimages/城市1.webp"  style="position: relative; height: 100px;width: 100%;  ">
+            <img src="Epicimages/廖方聪.jpg" style="position: absolute; top: 50px; left: 37px; border-radius: 50%;  width: 100px;height: 100px; border: 4px rgba(0, 0, 0, 0.644) solid;">
+           <div class="row no-gutters">
+             <div class="col-5" >
+              <div>
+                <h4 style="margin-left: 0px; margin-top: 75px;" >1086</h4>
+                <p style="margin-left: 0px; margin-top: -10px;" >Follwers</p>
+                <h4 style="margin-left: 0px; margin-top: 15px;" >119</h4>
+                <p style="margin-left: 0px; margin-top: -10px;" >Foll0wing</p>
+              </div>
+             </div>
+             <div class="col-7" style="background-color: #1a1a1a60; " >
+             <h5 style="margin-left: -120px; font-size: 17px; margin-top: 10px;" >廖方聪</h5>
+             <p style="margin-left: 15px; font-size: 13px; text-align: left;" >负责 图片 文字 提取,后勤管理。</p>
+
+             <div  style="position: relative;">
+              <img src="Epicimages/工具箱.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 20px; font-size: 13px;"  >UI & Grapht design</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/地球.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 10px; font-size: 13px;"  >www.google.com</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/clipboard写字板.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: 17px; font-size: 13px;"  >Download Resume</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/信封.png" style="position: absolute;top: -4px;  width: 20px; left: 15px; ">
+             <h5 style="margin-left: 3px; font-size: 13px;"  >Send a message</h5>
+            </div>
+            <div  style="position: relative; margin-top:20px;">
+              <img src="Epicimages/twitter.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left:-13px; font-size: 13px;"  >@eldindesign</h5>
+            </div>
+            <div  style="position: relative; margin-top: 20px;">
+              <img src="Epicimages/花.png" style="position: absolute;top: -4px;  width: 22px; left: 15px; ">
+             <h5 style="margin-left: -50px; font-size: 13px;"  >dribble</h5>
+            </div>
+             </div>
+           
+           </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    </div>
+  
+
+  <div class="card  mod " style="background: #44444480; color: #fff; " id="beiju1">
+   <h2 style="font-size: 21px; padding-left: 22px; margin-top: 20px;  border-left: 6px solid #00BFFF;">关于团队更多</h2>
+  <div class="row container " style="margin-left: -1px; margin-top: 5px; margin-bottom: 20px;" >
+    <div class="col-4 " style="position: relative;  "  ><a href="#" class="mode-ffoer" > <img src="Epicimages/croppedImg_61baca542903d.webp" style="border-radius: 3%;" class="w-100"> <p style="position: absolute; color: white;bottom: 5px;px; left:20px; " >风魔忍者一套染黑</p> </a> </div>
+    <div class="col-8">
+      
+      <div class="row">
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode2.webp"  style="border-radius: 3%;" class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >宗门扩展17.1</p> </a> </div>
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode3.webp"  style="border-radius: 3%;"  class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >只狼强化</p> </a></div>
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode4.webp"  style="border-radius: 3%;"  class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >宵夜修改器</p> </a></div>
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode5.webp"  style="border-radius: 3%;"  class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >气运八荒主宰</p> </a></div>
+      </div>
+      <div class="row" style="margin-top: 19px; margin-bottom: 10px;">
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode6.webp"   style="border-radius: 3%;" class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >SK1Q84 电影级画质</p> </a> </div>
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode7.webp" style="border-radius: 3%;" class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >FC6模组安装器 汉化</p> </a></div>
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode8.webp" style="border-radius: 3%;" class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >星光-苍老</p> </a></div>
+        <div class="col-3" style="position: relative;"><a href="#" class="mode-ffoer"> <img src="Epicimages/3dmode9.webp" style="border-radius: 3%;" class="w-100"> <p style="position: absolute; color: white;bottom: -14px; left:20px; " >缝合怪之炫彩</p> </a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="container " style="margin-top: 30px;" >
+  <div class="card mod " style="background: #44444480; color: #fff;" id="beiju3">
+   <h2 style="font-size: 21px;  padding-left: 22px; margin-top: 20px;  border-left: 6px solid #00BFFF;">游戏精品代表</h2>
+  <div class="row container " style="margin-left: -1px; margin-top: 15px; margin-bottom: 30px;" >
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/辐射4.png" style="border-radius: 3%;width: 160px; height: 90px; " > <p style="position: absolute; left:20px;bottom: -25px; " >辐射4</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/al.png" style="border-radius: 3%; width: 160px; height: 90px;" > <p style="position: absolute;  left:20px;bottom: -25px; " >Al 少女</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/shwj.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute; left:20px; bottom: -25px;" >生化危机2</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/xdfc.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute; left:20px; bottom: -25px;" >侠盗猎车手</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/zzhx.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute; left:20px; bottom: -25px;" >最终幻想7重制版</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000030.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute; left:20px; bottom: -25px;" >骑马与砍杀</p> </p> </div>
+  </div>
+  <div class="row container " style="margin-left: -1px; margin-top: 15px; margin-bottom: 30px;" >
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000031.jpg" style="border-radius: 3%;width: 160px; height: 90px;"> <p style="position: absolute;  left:20px;bottom: -25px;" >城市天际线</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000032.png" style="border-radius: 3%;width: 160px; height: 90px;"> <p style="position: absolute;  left:20px;bottom: -25px;" >生化危机3</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000033.png" style="border-radius: 3%;width: 160px; height: 90px;"> <p style="position: absolute;  left:20px;bottom: -25px;" >破晓传说</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000036.jpg" style="border-radius: 3%;width: 160px; height: 90px;"> <p style="position: absolute;  left:20px;bottom: -25px;" >上古卷轴5</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000035.png" style="border-radius: 3%;width: 160px; height: 90px;"> <p style="position: absolute;  left:20px;bottom: -25px;" >鬼谷八荒</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000037.png" style="border-radius: 3%;width: 160px; height: 90px;"> <p style="position: absolute;  left:20px;bottom: -25px;" >FIFA 21</p> </p> </div>
+  </div>
+  <div class="row container " style="margin-left: -1px; margin-top: 15px; margin-bottom: 30px;" >
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000038.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute;   left:20px;bottom: -25px; " >只狼:影逝二度</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/shwj.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute;  left:20px;bottom: -25px; " >生化危机2</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000030.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute; left:20px;bottom: -25px; " >上古分生</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000033.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute;  left:20px;bottom: -25px; " >天龙影劫</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/ia_100000031.jpg" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute;  left:20px; bottom: -25px;" >城市建筑</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="Epicimages/辐射4.png" style="border-radius: 3%;width: 160px; height: 90px;" > <p style="position: absolute;  left:20px; bottom: -25px;" >辐射3</p> </p> </div>
+  </div>
+  
+  </div>
+</div>
+
+<div class="container " style="margin-top: 30px;" >
+  <div class="card mod" style="background: #44444480;color: #fff; "  id="beiju4">
+   <h2 style="font-size: 17px;  padding-left: 22px; margin-top: 20px;  border-left: 6px solid #00BFFF;">团队原创作品</h2>
+  <div class="row container " style="margin-left: -1px; margin-top: 15px; margin-bottom: 30px; " >
+    <div class="col-3 mode-ffoer" style="position: relative;  "  >
+      <div> 
+        <img src="Epicimages/ia_400000007.jpg" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+      </div>
+      <div>
+          <p>丰收祭 哥特风外观</p>
+      </div>
+      <div style="position: relative;" >
+        <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+        <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+       <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+      </div>
+      <div  style="position: relative; top: 10px; ">
+        <div style="position: absolute;" >
+        <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+        <p style="font-size: 12px; margin-left: 15px; "  >Yam-Maple</p> 
+      </div>
+      <div style="position: absolute;">
+        <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+        <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+      </div>
+      </div>
+  </div>
+  <div class="col-3 mode-ffoer" style="position: relative;  "  >
+    <div> 
+      <img src="Epicimages/MOD5cfc010e00e00.gif" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+    </div>
+    <div>
+        <p>开启怪猎暖暖模式</p>
+    </div>
+    <div style="position: relative;" >
+      <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+      <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+     <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+    </div>
+    <div  style="position: relative; top: 10px; ">
+      <div style="position: absolute;" >
+      <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+      <p style="font-size: 12px; margin-left: 15px; "  >Yam-Maple</p> 
+    </div>
+    <div style="position: absolute;">
+      <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+      <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+    </div>
+    </div>
+</div>
+<div class="col-3 mode-ffoer" style="position: relative;  "  >
+  <div> 
+    <img src="Epicimages/ia_400000013.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+  </div>
+  <div>
+      <p>LOL皮城执法官蔚的拳套</p>
+  </div>
+  <div style="position: relative;" >
+    <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+    <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+   <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+  </div>
+  <div  style="position: relative; top: 10px; ">
+    <div style="position: absolute;" >
+    <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+    <p style="font-size: 12px; margin-left: 15px; "  >737524867</p> 
+  </div>
+  <div style="position: absolute;">
+    <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+    <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 18:11:22</p>
+  </div>
+  </div>
+</div>
+<div class="col-3 mode-ffoer" style="position: relative;  "  >
+  <div> 
+    <img src="Epicimages/ia_400000015.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+  </div>
+  <div>
+      <p>Vergil 武器 阎魔刀</p>
+  </div>
+  <div style="position: relative;" >
+    <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+    <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+   <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+  </div>
+  <div  style="position: relative; top: 10px; ">
+    <div style="position: absolute;" >
+    <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+    <p style="font-size: 12px; margin-left: 15px; "  >peng369</p> 
+  </div>
+  <div style="position: absolute;">
+    <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+    <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+  </div>
+  </div>
+</div>
+   
+  </div>
+  <div class="row container " style="margin-left: -1px; margin-top: 15px; margin-bottom: 30px; " >
+    <div class="col-3 mode-ffoer" style="position: relative;  "  >
+      <div> 
+        <img src="Epicimages/ia_400000019.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+      </div>
+      <div>
+          <p>极品捏脸数据</p>
+      </div>
+      <div style="position: relative;" >
+        <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+        <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+       <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+      </div>
+      <div  style="position: relative; top: 10px; ">
+        <div style="position: absolute;" >
+        <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+        <p style="font-size: 12px; margin-left: 15px; "  >kehanio</p> 
+      </div>
+      <div style="position: absolute;">
+        <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+        <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:12:28</p>
+      </div>
+      </div>
+  </div>
+  <div class="col-3 mode-ffoer" style="position: relative;  "  >
+    <div> 
+      <img src="Epicimages/ia_400000023.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+    </div>
+    <div>
+        <p>逍遥侠 世界外观</p>
+    </div>
+    <div style="position: relative;" >
+      <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+      <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+     <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 剑侠世界：世界  服装护甲</p>
+    </div>
+    <div  style="position: relative; top: 10px; ">
+      <div style="position: absolute;" >
+      <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+      <p style="font-size: 12px; margin-left: 15px; "  >Yam-Maple</p> 
+    </div>
+    <div style="position: absolute;">
+      <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+      <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+    </div>
+    </div>
+</div>
+<div class="col-3 mode-ffoer" style="position: relative;  "  >
+  <div> 
+    <img src="Epicimages/ia_400000025.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+  </div>
+  <div>
+      <p>人物外观设计</p>
+  </div>
+  <div style="position: relative;" >
+    <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+    <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+   <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 侠盗飞车：角色  服装设计</p>
+  </div>
+  <div  style="position: relative; top: 10px; ">
+    <div style="position: absolute;" >
+    <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+    <p style="font-size: 12px; margin-left: 15px; "  >xialing20</p> 
+  </div>
+  <div style="position: absolute;">
+    <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+    <p style="font-size: 12px; margin-left: 130px; "> 2019-2-03 14:12:29</p>
+  </div>
+  </div>
+</div>
+<div class="col-3 mode-ffoer" style="position: relative;  "  >
+  <div> 
+    <img src="Epicimages/ia_400000027.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+  </div>
+  <div>
+      <p>天空之城</p>
+  </div>
+  <div style="position: relative;" >
+    <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+    <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+   <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 天空之城：世界 外观改变</p>
+  </div>
+  <div  style="position: relative; top: 10px; ">
+    <div style="position: absolute;" >
+    <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+    <p style="font-size: 12px; margin-left: 15px; "  >tianko126</p> 
+  </div>
+  <div style="position: absolute;">
+    <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+    <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 19:13:25</p>
+  </div>
+  </div>
+</div>
+   
+  </div>
+  <div class="row container " style="margin-left: -1px; margin-top: 15px; margin-bottom: 30px; " >
+    <div class="col-3 mode-ffoer" style="position: relative;  "  >
+      <div> 
+        <img src="Epicimages/ia_400000029.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+      </div>
+      <div>
+          <p>丰收祭 哥特风外观</p>
+      </div>
+      <div style="position: relative;" >
+        <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+        <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+       <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+      </div>
+      <div  style="position: relative; top: 10px; ">
+        <div style="position: absolute;" >
+        <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+        <p style="font-size: 12px; margin-left: 15px; "  >Yam-Maple</p> 
+      </div>
+      <div style="position: absolute;">
+        <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+        <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+      </div>
+      </div>
+  </div>
+  <div class="col-3 mode-ffoer" style="position: relative;  "  >
+    <div> 
+      <img src="Epicimages/ia_400000033.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+    </div>
+    <div>
+        <p>丰收祭 哥特风外观</p>
+    </div>
+    <div style="position: relative;" >
+      <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+      <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+     <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+    </div>
+    <div  style="position: relative; top: 10px; ">
+      <div style="position: absolute;" >
+      <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+      <p style="font-size: 12px; margin-left: 15px; "  >Yam-Maple</p> 
+    </div>
+    <div style="position: absolute;">
+      <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+      <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+    </div>
+    </div>
+</div>
+<div class="col-3 mode-ffoer" style="position: relative;  "  >
+  <div> 
+    <img src="Epicimages/ia_400000035.png" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+  </div>
+  <div>
+      <p>丰收祭 哥特风外观</p>
+  </div>
+  <div style="position: relative;" >
+    <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+    <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+   <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+  </div>
+  <div  style="position: relative; top: 10px; ">
+    <div style="position: absolute;" >
+    <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+    <p style="font-size: 12px; margin-left: 15px; "  >Yam-Maple</p> 
+  </div>
+  <div style="position: absolute;">
+    <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+    <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+  </div>
+  </div>
+</div>
+<div class="col-3 mode-ffoer" style="position: relative;  "  >
+  <div> 
+    <img src="Epicimages/MOD5bcb66f6af408.gif" style="border-radius: 3%; width: 247.5px; height: 141px;" >
+  </div>
+  <div>
+      <p>丰收祭 哥特风外观</p>
+  </div>
+  <div style="position: relative;" >
+    <img src="Epicimages/游戏，游戏机.png" style="position: absolute; width: 20px;top: -14px; " >
+    <img src="Epicimages/original_1.png" style="position: absolute; top: -180px; left: 170px;">
+   <p style="position: absolute; font-size: 14px; color: rgba(204, 204, 204, 0.507); left: 26px; top: -14px; " > 怪物猎人：世界  服装护甲</p>
+  </div>
+  <div  style="position: relative; top: 10px; ">
+    <div style="position: absolute;" >
+    <img src="Epicimages/人.png" style="position: absolute; width: 12px; top: 3px;  " >
+    <p style="font-size: 12px; margin-left: 15px; "  >Yam-Maple</p> 
+  </div>
+  <div style="position: absolute;">
+    <img src="Epicimages/时间_o.png"  style="position: absolute; width: 16px; left: 113px;top: 1px;  " >
+    <p style="font-size: 12px; margin-left: 130px; "> 2018-10-04 14:13:51</p>
+  </div>
+  </div>
+</div>
+   
+  </div>
+  </div>
+</div>
+
+
+<div class="container " style="margin-top: 30px;" >
+  <div class="card mod" style="background: #44444480;color: #fff;"  id="beiju6">
+   <h2 style="font-size: 21px;  padding-left: 22px; margin-top: 20px;  border-left: 6px solid #00BFFF;">合作联盟</h2>
+  <div class="row container " style="margin-left: -1px; margin-top: 15px; margin-bottom: 30px;" >
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="https://img1.baidu.com/it/u=106186382,632949216&fm=26&fmt=auto  " style="border-radius: 3%;" class="w-100"> <p style="position: absolute;   left:20px; " >楷你环保</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="https://img1.baidu.com/it/u=3021873130,2442455004&fm=26&fmt=auto" style="border-radius: 3%;" class="w-100"> <p style="position: absolute; left:20px; " >乾信</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="https://img0.baidu.com/it/u=2667414474,1948614971&fm=26&fmt=auto" style="border-radius: 3%;" class="w-100"> <p style="position: absolute;  left:20px; " >飞速达公司</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="https://img1.baidu.com/it/u=2056242731,2321056813&fm=26&fmt=auto" style="border-radius: 3%;" class="w-100"> <p style="position: absolute;  left:20px; " >矩阵</p> </p> </div>
+    <div class="col-2 " style="position: relative;  "  ><p href="#" class="mode-ffoer" > <img src="https://img1.baidu.com/it/u=2281357119,3713477152&fm=26&fmt=auto" style="border-radius: 3%;" class="w-100"> <p style="position: absolute;  left:20px; " >天力咨询</p> </p> </div>
+    <div class="col-2 " style="position: relative;   "  ><p href="#" class="mode-ffoer" > <img src="https://img1.baidu.com/it/u=2064474970,1982811049&fm=26&fmt=auto" style="border-radius: 3%;" class="w-100"> <p style="position: absolute;  left:20px; " >天马行空</p> </p> </div>
+  </div>
+  
+  </div>
+</div>
+
+
+
+
+
+    <script>
+        
+
+        window.onload=function(){ 
+		var obt=document.getElementById("bt");
+		 var odiv=document.getElementById("thediv"); 
+         var obt1=document.getElementById("bt1");
+		 var odiv1=document.getElementById("thediv1"); 
+         var obt2=document.getElementById("bt2");
+		 var odiv2=document.getElementById("thediv2"); 
+      
+		obt.onclick=function(){ 
+		if(odiv.style.display=="none")
+		{ odiv.style.display="block";  }
+		else{ odiv.style.display="none";  } 
+		}
+        obt1.onclick=function(){ 
+		if(odiv1.style.display=="none")
+		{ odiv1.style.display="block";  }
+		else{ odiv1.style.display="none";  } 
+		}  
+        obt2.onclick=function(){ 
+		if(odiv2.style.display=="none")
+		{ odiv2.style.display="block";  }
+		else{ odiv2.style.display="none";  } 
+		}  
+    
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // 获取div对象
+  var ooo = document.getElementById("d1");
+         var odiv=document.getElementById("beiju"); 
+         var odiv1=document.getElementById("beiju1");
+         var odiv2=document.getElementById("beiju2");
+         var odiv3=document.getElementById("beiju3");
+         var odiv4=document.getElementById("beiju4");
+         var odiv5=document.getElementById("beiju5");
+         var odiv6=document.getElementById("beiju6");
+        // 设置flag判断当前颜色
+        var flag = true;
+        // 绑定事件
+        ooo.onclick = function () {
+            if (flag){ //当前颜色为灰色
+                // odiv.style.backgroundImage="url(Epicimages/壁纸1.jpg)"; // div改为黄色
+                odiv.style.backgroundColor = "#383838";
+                odiv1.style.backgroundColor = "#F3F3F380";
+                odiv2.style.backgroundColor = "#F3F3F380";
+                odiv3.style.backgroundColor = "#F3F3F380";
+                odiv4.style.backgroundColor = "#F3F3F380";
+                odiv5.style.backgroundColor = "#F3F3F380";
+                odiv6.style.backgroundColor = "#F3F3F380";
+                odiv1.style.color = "#000";
+                odiv2.style.color = "#000"; 
+                odiv3.style.color = "#000"; 
+                odiv4.style.color = "#000";  
+                odiv5.style.color = "#000";
+                odiv6.style.color = "#000";
+                
+                flag = false;
+            } else { // 当前颜色为黄色
+                odiv.style.backgroundColor = "#1A1A1A"; // div改为灰色
+                odiv1.style.backgroundColor = "#44444480"; 
+                odiv2.style.backgroundColor = "#44444480"; 
+                odiv3.style.backgroundColor = "#44444480"; 
+                odiv4.style.backgroundColor = "#44444480"; 
+                odiv5.style.backgroundColor = "#44444480"; 
+                odiv6.style.backgroundColor = "#44444480"; 
+                odiv1.style.color = "#fff"; 
+                odiv2.style.color = "#fff"; 
+                odiv3.style.color = "#fff"; 
+                odiv4.style.color = "#fff"; 
+                odiv5.style.color = "#fff";
+                odiv6.style.color = "#fff";  
+                flag = true;
+            }
+            
+        }
+        
+        // var ooo11 = document.getElementById("d2");
+        // var odivv=document.getElementById("beijuu");
+        // var fla=true;
+        // // 绑定事件
+        // ooo11.onclick = function () {
+        //   if (fla){ //当前颜色为灰色
+        //         odivv.style.backgroundImage="url(Epicimages/壁纸1.jpg)"; // div改为黄色
+                
+        //         fla= false;
+        //     } else { // 当前颜色为黄色
+        //         odivv.style.backgroundColor = "#1A1A1A"; // div改为灰色
+               
+        //         fla=true;
+        //     }
+        // };
+
+
+
+
+
+!function(){
+     
+     function n(n,e,t){
+      
+     return n.getAttribute(e)||t
+      
+     }
+      
+     function e(n){
+      
+     return document.getElementsByTagName(n)
+      
+     }
+      
+     function t(){
+      
+     var t=e("script"),o=t.length,i=t[o-1];
+      
+     return{
+     
+     l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",20),c:n(i,"color","104,240,243")/* 颜色*/,n:n(i,"count",399)/*蜘蛛网数量*/
+      
+     }
+      
+     }
+      
+     function o(){
+      
+     a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
+      
+     c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
+      
+     }
+      
+     function i(){
+      
+     r.clearRect(0,0,a,c);
+      
+     var n,e,t,o,m,l;
+      
+     s.forEach(function(i,x){
+      
+     for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],
+      
+     null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,
+      
+     l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),
+      
+     t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))
+      
+     }),
+      
+     x(i)
+      
+     }
+      
+     var a,c,u,m=document.createElement("canvas"),
+      
+     d=t(),l="c_n"+d.l,r=m.getContext("2d"),
+      
+     x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||
+      
+     function(n){
+      
+     window.setTimeout(n,1e3/45)
+      
+     },
+      
+     w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,
+      
+     window.onmousemove=function(n){
+      
+     n=n||window.event,y.x=n.clientX,y.y=n.clientY
+      
+     },
+      
+     window.onmouseout=function(){
+      
+     y.x=null,y.y=null
+      
+     };
+      
+     for(var s=[],f=0;d.n>f;f++){
+      
+     var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})
+      
+     }
+      
+     u=s.concat([y]),
+      
+     setTimeout(function(){i()},100)
+      
+     }();
+    </script>
+</body>
+</html>

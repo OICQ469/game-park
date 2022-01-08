@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏详情</title>
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+    .wx-wift{
+        color: white;
+    }
+    .youimg{
+        margin-left: 90px;
+        padding-bottom: 20px;
+    }
+    .wx-jichu1{
+        background-color: #FFFFFF1A;
+        width: 80px;
+        text-align: center;
+        border-radius: 20%;
+    }
+    .wx-jichu2{
+        background-color: blue;
+        width: 70px;
+        text-align: center;
+        border-radius: 9%; 
+    }
+    .wx-jichu3{
+        font-size: 13px;
+        color: white;
+    }
+   .unik{
+       margin-left: 200px;
+   }
+   .unik1{
+       margin-left: 235px;
+   }
+    .xiahua{
+        border-bottom: 1px #FFFFFF1A solid;
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+    .wx-youxianqing{
+      border-radius: 2%;
+    }
+   .wx-line{
+    margin-top: -15px;
+   }
+   .gaodu{
+     margin-top: 90px;
+   }
+ .jianto{
+   width: 20px;
+   margin-left: 10px;
+ }
+ .jiahao{
+  width: 23px;
+
+ }
+.windos{
+ margin-left: 100px;
+ width: 23px;
+    }
+    .xpline{
+        line-height: 6px;
+        font-size: 15px;
+    }
+    .xpmangin{
+        margin-top: -20px;
+    }
+    .xpmanginx{
+        margin-top: 40px;
+    }
+    .carousel-indicators {
+				bottom: -90px;
+				
+			}
+   
+			.carousel-indicators .Rotation_indicator1 {
+				/* background:url(Epicimages/ia_200000018.jpg); */
+        background-image: url(Epicimages/demo3lunbo1.jpg);
+        background-size:cover;
+				background-repeat: no-repeat;
+				display: block;
+				cursor: pointer;
+				text-align: center;
+				width: 100px;
+				height: 50px;
+				border: 1px white solid;
+				border-radius: 10%;
+		    padding-left: 100px;
+       
+			}
+      .carousel-indicators .Rotation_indicator2 {
+				/* background:url(Epicimages/ia_200000018.jpg); */
+        background-image: url(Epicimages/demo3lunbo2.jpg);
+        background-size:cover;
+				background-repeat: no-repeat;
+				display: block;
+				cursor: pointer;
+				text-align: center;
+				width: 100px;
+				height: 50px;
+				border: 1px white solid;
+				border-radius: 10%;
+		    padding-left: 100px;
+       
+			}
+      .carousel-indicators .Rotation_indicator3 {
+				/* background:url(Epicimages/ia_200000018.jpg); */
+        background-image: url(Epicimages/demo3lunbo3.jpg);
+        background-size:cover;
+				background-repeat: no-repeat;
+				display: block;
+				cursor: pointer;
+				text-align: center;
+				width: 100px;
+				height: 50px;
+				border: 1px white solid;
+				border-radius: 10%;
+		    padding-left: 100px;
+       
+			}
+      .carousel-indicators .Rotation_indicator4 {
+				/* background:url(Epicimages/ia_200000018.jpg); */
+        background-image: url(Epicimages/demo3lunbo4.jpg);
+        background-size:cover;
+				background-repeat: no-repeat;
+				display: block;
+				cursor: pointer;
+				text-align: center;
+				width: 100px;
+				height: 50px;
+				border: 1px white solid;
+				border-radius: 10%;
+		    padding-left: 100px;
+       
+			}
+     
+			
+			.carousel-indicators>li {
+				position: relative;
+      
+			}
+			
+			.carousel-indicators .active::before {
+				content: "";
+				position: absolute;
+				background-color: #fff;
+				opacity: 0.5;
+				left: 0;
+				height: inherit;
+				width: 0px;
+				height: 50px;
+        border-radius: 10%;
+				animation: banner-active 3s linear infinite;
+			}
+			/* hover时指示器动画停止 */
+			
+			.carousel:hover .carousel-indicators .active::before {
+				animation: none;
+			}
+			/* hover时指示器颜色 */
+			
+			/* .carousel:hover .carousel-indicators .active {
+				background-color: #1c1c1c;
+        
+			} */
+			
+			@keyframes banner-active {
+				from {
+					width: 0px;
+				}
+				to {
+					width: inherit;
+				}
+			}
+</style>
+<body style="background-color:#1c1c1c;">
+    <div class="container">
+     
+      <!-- 游戏名字 -->
+    <h1 class="wx-wift mt-5">FINAL FANTASY VII REMAKE </h1>
+    <div class="row mt-5 no-gutters"> 
+       <!-- -----------------------------------------------------左边组件------------------------------------------------------------- -->
+        <div  class="col-7"> 
+          <!-- 轮播控件 -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active Rotation_indicator1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" class="Rotation_indicator2" > </li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" class="Rotation_indicator3"> </li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3" class="Rotation_indicator4"> </li>
+              
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video src="video/demo3.mp4"  class="d-block w-100" muted  controls autoplay loop></video>
+              </div>
+              <div class="carousel-item">
+                <img src="Epicimages/demo3lunbo2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Epicimages/demo3lunbo3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Epicimages/demo3lunbo4.jpg" class="d-block w-100" alt="...">
+              </div>
+            
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <!-- --------------------左边游戏文字内容 ---------------------->
+            <p style="margin-top: 110px;" class="wx-wift ">身背毁灭剑的前神罗战士克劳德踏入魔晄都市米德加。 运用最先进技术制作的画面、融合战略性与直觉式动作操作的战斗系统—— 不朽名作《FINAL FANTASY VII》的世界重生为“全新故事”。</p>
+            <div class="row">
+                <div class="col-6"> <p class="text-muted">游戏类型</p><p class="wx-wift">动作，角色扮演，开放世界</p></div>
+                <div class="col-6"> <p class="text-muted">功能</p><p class="wx-wift">控制器支持</p></div>
+            </div>
+            <p class="wx-wift">FINAL FANTASY VII REMAKE INTERGRADE</p>
+            <p class="text-muted">■STORY</p>
+            <p class="xpline text-muted">抽取自星球的生命能源──魔晄。</p>
+            <p class="xpline text-muted">在“米德加”这个拥有八座魔晄炉的阶层都市，</p>
+            <p class="xpline text-muted">凭借魔晄掌握世界的巨型“神罗公司”为了保护星球挺身而出的反神罗组织“雪崩”爆发激烈冲突。</p>
+            <p class="xpline text-muted">前神罗战士克劳德，以佣兵的身份参加雪崩的“壹号魔晄炉引爆作战”。</p>
+            <p class="xpline text-muted">魔晄炉爆炸的巨响响彻第捌区。</p>
+            <p class="xpline text-muted">陷入火海的城镇中，出现那位已故死敌飘渺的幻影。</p>
+            <p class="xpline text-muted">克劳德追着渴望消除的昔日幻影，最后与她相遇。</p>
+            <p class="xpline text-muted">卖花女递出一朵黄花，</p>
+            <p class="xpline text-muted">花语是“重逢”。</p>
+            <p class="xpline text-muted">刹那间，一团黑影──“命运守望者”将两人包围。</p>
+            <p class="xpline text-muted">现在，心念将再次于星球流转。</p>
+            <p class=" text-muted xpmanginx">※本作为1997年上市的《FINAL FANTASY VII》之重制版。</p>
+            <p class="xpmangin text-muted">以原作中直到逃离米德加的剧情为基础，全新内容，是预计推出多部系列作的首部作品。</p>
+          
+            
+            <!-- 显示更多内容列表 -->
+            <div id="btc" style="display: none;" >
+                <img src="Epicimages/demo3lxp1.jpg" class="w-100">
+                <p class=" text-muted mt-4">■“FF7R EPISODE INTERmission”（尤菲的新篇章）</p>
+                <p class="xpline xpmanginx text-muted">“FF7R EPISODE INTERmission”（尤菲的新篇章）是新角色“尤菲”的故事。</p>
+                <p class="xpline text-muted">潜入米德加的五台忍者们将与雪崩总会共同策画，挑战从神罗公司盗出究极魔晶石的任务。</p>
+                <p class="xpline text-muted">※“FF7R EPISODE INTERmission”（尤菲的新篇章）中，能够操作“尤菲”作为游玩角色。</p>
+                <img src="Epicimages/demo3lxp2.jpg" class="w-100">
+                <p class="text-muted mt-4">■ 本商品包含的内容</p>
+                <p class=" text-muted xpmanginx">《FINAL FANTASY VII REMAKE》包含以下内容：</p>
+                <p class="xpline text-muted">・《FINAL FANTASY VII REMAKE》游戏本篇</p>
+                <p class="xpline text-muted">・追加篇章：“FF7R EPISODE INTERmission”（尤菲的新篇章）</p>
+                <p class="xpline text-muted">・武器：仙人掌手里剑。</p>
+                <p class="xpline text-muted">・防具：米德加手镯</p>
+                <p class="xpline text-muted">・防具：神罗手镯</p>
+                <p class="xpline text-muted">・防具：古留根尾手镯</p>
+                <p class="xpline text-muted">・配件：明星腰带</p>
+                <p class="xpline text-muted">・配件：魔晄水晶</p>
+                <p class="xpline text-muted">・配件：自动重生耳环</p>
+                <p class="xpline text-muted">・召唤魔晶石：卡邦库尔</p>
+                <p class="xpline text-muted">・召唤魔晶石：小陆行鸟</p>
+                <p class="xpline text-muted">・召唤魔晶石：小陆行鸟</p>
+               
+              <button class="btn btn-outline-dark btn-block btn-lg wx-wift mt-3" id="btb">显示较少内容<img src="Epicimages/箭头 上.png" class="jianto"></button>
+            </div>
+            <button class="btn btn-outline-dark btn-block btn-lg wx-wift mt-3"  id="bta"  >显示更多内容<img src="Epicimages/箭头 下.png" class="jianto" ></button>
+          <!-- 左边 配置列表 -->
+            <h5 class="wx-wift mt-4">配置</h5>
+              <div class="row mt-4" style="background-color: #252525; border-radius: 1%;">
+             <div class="col-1"></div>
+                <div class="col-5 mt-4">
+                  <p  style=" color: #ccc; margin-top: 20px;">WINDOWS</p>
+                  <hr style="background: #ccc; width: 550px; ">
+                  <p class="text-muted  mt-5">最低配置</p>
+                  <p class="text-muted">OS version</p>
+                  <p class="wx-wift wx-line">Windows</p>
+                  <p class="text-muted">CPU</p>
+                  <p class="wx-wift wx-line">Intel Core 2 Duo @ 2.2GHz or AMD</p>
+                  <p class="text-muted">Memory</p>
+                  <p class="wx-wift wx-line">1 GB RAM</p>
+                  <p class="text-muted">GPU</p>
+                  <p class="wx-wift wx-line">GeForce GTX 550 or Radeon HD 6770</p>
+                  <p class="text-muted">Storage</p>
+                  <p class="wx-wift wx-line">100 MB</p>
+                  <p class="text-muted">支持的语言</p>
+                  <p class="wx-wift wx-line">音频:</p>
+                  <p class="wx-wift wx-line">文本: English</p>
+                  <hr style="background: #ccc; width: 550px; margin-top: 50px;">
+                </div>
+                
+                <div class="col-5 mt-4">
+                  <hr style=" background:#252525; width: 1px;">
+                  <p class="text-muted  gaodu">推荐配置</p>
+                  <p class="text-muted">OS version</p>
+                  <p class="wx-wift wx-line">Windows</p>
+                  <p class="text-muted">CPU</p>
+                  <p class="wx-wift wx-line">Intel Core i5 2300 or AMD FX6120</p>
+                  <p class="text-muted">Memory</p>
+                  <p class="wx-wift wx-line">4 GB RAM</p>
+                  <p class="text-muted">GPU</p>
+                  <p class="wx-wift wx-line"GeForce GTX 660 or Radeon HD 7870</p>
+                  <p class="text-muted">Storage</p>
+                  <p class="wx-wift wx-line">100 MB</p>
+                  
+                </div>
+                <div class="col-1"></div>
+                <p  style="margin-left: 250px; color: #ccc; margin-top: 30px;">© 2021 Boom Games</p>
+              </div>
+        </div>
+        <div class="col-1"></div>
+
+        <!-- ---------------------------------------------------右边组件------------------------------------------------------------ -->
+        <div  class="col-4"><img src="Epicimages/demo3changs.jpg" class="w-50  youimg" >
+        <p class="wx-wift wx-jichu1">基础游戏</p>
+        <p> <font class="wx-wift wx-jichu2"> -20% </font><s class="wx-wift ml-2">¥446</s><font class="wx-wift ml-2">¥386</font></p>
+        <p class="wx-jichu3">优惠截止于2022/2/18 00:00</p>
+        <button class="btn btn-primary btn-block btn-lg">立即购买</button>
+        <button class="btn btn-outline-dark btn-block btn-lg wx-wift">加入购物车</button>
+        <button class="btn btn-outline-dark btn-block  wx-wift"><img src="Epicimages/加号.png" class="jiahao"> 添加至愿望清单</button>
+        <p class="xiahua "><font class="text-muted xiah1">开发商</font> <font class="wx-wift unik" >Rockstar Games</font></p>
+        <p class="xiahua "><font class="text-muted xiah1">发行商</font> <font class="wx-wift unik" >Rockstar Games</font></p>
+        <p class="xiahua "><font class="text-muted xiah1">发行日期</font> <font class="wx-wift unik1" >19/11/05</font></p>
+        <p class="xiahua "><font class="text-muted xiah1">平台</font> <font class="wx-wift unik" ><img src="Epicimages/windows.png"  class="windos" ></font></p>
+        
+        
+        </div>
+        
+    </div>
+</div>
+
+<script>
+            document.getElementById("bta").onclick = function() {
+                document.getElementById("bta").style.display = "none";
+                document.getElementById("btc").style.display = "block";
+            };
+            document.getElementById("btb").onclick = function() {
+                document.getElementById("bta").style.display = "block";
+                document.getElementById("btc").style.display = "none";
+            };
+           
+           
+</script>
+</body>
+</html>
